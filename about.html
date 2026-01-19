@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+    <div class="burger-icon" id="burger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <ul class="navbar" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <button class="navbutton">Book Now!</button>
+        <button id="loginBtn" class="loginbutton">Login</button>
+    </ul>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+        
+            <div class="modal-header">
+                <h2>Login to Travel Buddy</h2>
+            </div>
+
+            <form id="authForm">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input id="inputUsername" type="text" placeholder="Enter Username" required>
+                </div>
+            
+                <div class="form-group">
+                    <label>Password</label>
+                    <input id="inputPassword" type="password" placeholder="Enter Password" required>
+                </div>
+
+                <button type="submit" class="auth-submit" id="loginSubmit">Login</button>
+                <button type="submit" class="auth-submit" id="registerSubmit" style="display:none;">Register</button>
+            </form>
+
+            <div class="modal-footer">
+                <button class="text-btn">Forgot Password?</button>
+                <div class="divider"></div>
+                <button id="registerBtn" class="text-btn highlight">New here? Register Now</button>
+                <button id="loginAgain" class="text-btn highlight" style="display:none;">Already have an account? Login</button>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="about-hero">
+    <div class="hero-overlay">
+        <h1>About Us</h1>
+        <p>TravelBuddy The best service travel</p>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="content-wrapper">
+        <div class="content-left">
+            <img src="images/logo.png" alt="Travel Buddy Logo" class="large-logo">
+            <h2 class="brand-name">Travel Buddy</h2>
+        </div>
+
+        <div class="content-right">
+            <span class="sub-title">Who we are</span>
+            <h3>We love to discover</h3>
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis repellendus voluptas autem, illo atque magnam recusandae cum earum sequi repudiandae dicta nobis fuga, minus nostrum asperiores similique odio accusantium hic.</p>
+            
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis repellendus voluptas autem, illo atque magnam recusandae cum earum sequi repudiandae dicta nobis fuga, minus nostrum asperiores similique odio accusantium hic.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section brand">
+            <img src="images/logo.png" alt="Travel Buddy Logo" class="footer-logo">
+            <h2>Travel Buddy</h2>
+        </div>
+
+        <div class="footer-section links">
+            <h3>DISCOVER DESTINATION</h3>
+            <ul>
+                <li>New York</li>
+                <li>Bali</li>
+                <li>London</li>
+                <li>Maldives</li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>CONTACT US</h3>
+            <p>00 Some Street, Somewhere #0000</p>
+            <p>+995 123 456 789</p>
+            <p>example@mail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

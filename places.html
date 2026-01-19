@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+    <div class="burger-icon" id="burger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <ul class="navbar" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <button class="navbutton">Book Now!</button>
+        <button id="loginBtn" class="loginbutton">Login</button>
+    </ul>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+        
+            <div class="modal-header">
+                <h2>Login to Travel Buddy</h2>
+            </div>
+
+            <form id="authForm">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input id="inputUsername" type="text" placeholder="Enter Username" required>
+                </div>
+            
+                <div class="form-group">
+                    <label>Password</label>
+                    <input id="inputPassword" type="password" placeholder="Enter Password" required>
+                </div>
+
+                <button type="submit" class="auth-submit" id="loginSubmit">Login</button>
+                <button type="submit" class="auth-submit" id="registerSubmit" style="display:none;">Register</button>
+            </form>
+
+            <div class="modal-footer">
+                <button class="text-btn">Forgot Password?</button>
+                <div class="divider"></div>
+                <button id="registerBtn" class="text-btn highlight">New here? Register Now</button>
+                <button id="loginAgain" class="text-btn highlight" style="display:none;">Already have an account? Login</button>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="about-hero">
+    <div class="hero-overlay">
+        <h1>Places</h1>
+        <p>TravelBuddy The best service travel</p>
+    </div>
+</section>
+ <div class="recomended">
+        <div class="places">
+            <div class="place-card" data-lat="40.7128" data-lon="-74.0060">
+                <img src="images/place1.jpg" alt="">
+                <h3>New York</h3>
+                <h3>Current Weather</h3>
+                <div class="weather-display"></div>
+            </div>
+            <div class="place-card" data-lat="-8.3405" data-lon="115.0920">
+                <img src="images/place2.jpg" alt="">
+                <h3>Bali</h3>
+                <h3>Current Weather</h3>
+                <div class="weather-display"></div>
+            </div>
+            <div class="place-card" data-lat="51.5072" data-lon="-0.1276">
+                <img src="images/place3.png" alt="">
+                <h3>London</h3>
+                <h3>Current Weather</h3>
+                <div class="weather-display"></div>
+            </div>
+            <div class="place-card" data-lat="3.2028" data-lon="73.2207">
+                <img src="images/place4.jpg" alt="">
+                <h3>Maldives</h3>
+                <h3>Current Weather</h3>
+                <div class="weather-display"></div>
+            </div>
+            <div class="place-card" data-lat="48.8575" data-lon="2.3522">
+                <img src="images/place5.jpg" alt="">
+                <h3>Paris</h3>
+                <h3>Current Weather</h3>
+                <div class="weather-display"></div>
+            </div>
+            <div class="place-card" data-lat="50.0755" data-lon="14.4378">
+                <img src="images/place6.jpg" alt="">
+                <h3>Prague</h3>
+                <h3>Current Weather</h3>
+                <div class="weather-display"></div>
+            </div>
+        </div>
+    </div>
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section brand">
+            <img src="images/logo.png" alt="Travel Buddy Logo" class="footer-logo">
+            <h2>Travel Buddy</h2>
+        </div>
+
+        <div class="footer-section links">
+            <h3>DISCOVER DESTINATION</h3>
+            <ul>
+                <li>New York</li>
+                <li>Bali</li>
+                <li>London</li>
+                <li>Maldives</li>
+                <li><a href="places.html">More</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>CONTACT US</h3>
+            <p>00 Some Street, Somewhere #0000</p>
+            <p>+995 123 456 789</p>
+            <p>example@mail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
